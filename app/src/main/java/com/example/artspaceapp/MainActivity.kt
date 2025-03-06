@@ -44,7 +44,7 @@ fun ArtSpaceApp() {
         Artwork("The Scream", "Edvard Munch", "1893", R.drawable.scream)
     )
 
-    var currentIndex by remember { mutableStateOf(0) }
+    var currentIndex by remember { mutableIntStateOf(0) }
 
     val swipeGesture = Modifier.pointerInput(Unit) {
         detectHorizontalDragGestures { change, dragAmount ->
